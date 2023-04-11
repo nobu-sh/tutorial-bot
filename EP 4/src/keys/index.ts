@@ -2,7 +2,7 @@ import { config } from "dotenv"
 import { resolve } from "path"
 import { Keys } from '../types'
 
-//Doing this here instead of on src/index.ts and ___ guarantees the keys are loaded when other files import keys
+//Doing this here instead of on src/index.ts and scripts/deploy.ts (and elsewhere) guarantees the keys are loaded when other files import them
 //Since this command is the only reason those files had the 'config' and 'resolve' import, it cleans them up too
 config({ path: resolve(__dirname, '..', '.env') })
 
