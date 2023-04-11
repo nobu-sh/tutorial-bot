@@ -1,5 +1,4 @@
 import { ActionRowBuilder, ButtonBuilder, SelectMenuBuilder } from "@discordjs/builders"
-import { debug } from "console"
 import { APIEmbedField, ButtonStyle, EmbedBuilder, InteractionReplyOptions, SelectMenuOptionBuilder } from "discord.js"
 import CategoryRoot from  '../commands'
 import { chunk, createId, readId } from "../utils"

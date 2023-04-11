@@ -1,8 +1,3 @@
-import { config } from 'dotenv'
-import { resolve } from 'path'
-
-config({ path: resolve(__dirname, '..', '..', '.env') })
-
 import { REST, Routes, APIUser } from 'discord.js'
 import commands from '../commands'
 import keys from '../keys'
